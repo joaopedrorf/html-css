@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir áudios em HTML5</p>
+    <audio src="midia/your-love.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+
+    <p>Outro áudio com a maneira correta a ser inserida no site para evitar erros no áudios, salvando ele só em um formato</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/your-love.mp3" type="audio/mpeg">
+        <source src="midia/your-love.ogg" type="audio/ogg">
+        <source src="midia/your-love.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudios. <a href="midia/your-love.mp3">Clique aqui paras baixar o arquivo MP3</a></p>
+</body>
+</html>
